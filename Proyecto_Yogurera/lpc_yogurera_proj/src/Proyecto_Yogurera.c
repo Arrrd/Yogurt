@@ -44,16 +44,16 @@ int main(void) {
     // Force the counter to be placed into memory
     volatile static int i = 0 ;
     // Enter an infinite loop, just incrementing a counter
-//    LED_relay=1;
+    //LED_relay=1;
 //    pin_LPC = 22;
 //    port_LPC = 0;
       //A partir de acá comenté yo
-//    LED_relay = 0;
-//    initRelays(22,0);
-//    LED_relay = 1;
-//    initRelays(22,0);
-    	LED_relay = 1;
-        initRelays(1,2);
+    LED_relay = 0;
+    initRelays(22,0);
+    LED_relay = 1;
+    initRelays(22,0);
+//    	LED_relay = 1;
+//        initRelays(1,2);
 //        LED_relay = 1;
 //        initRelays(1,2);
     while(1) {

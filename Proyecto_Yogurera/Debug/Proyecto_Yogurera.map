@@ -265,7 +265,7 @@ Discarded input sections
  .debug_macro   0x00000000       0x11 ./lpc_yogurera_lib/Sensor_de_Temperatura.o
  .debug_macro   0x00000000      0x8c8 ./lpc_yogurera_lib/Sensor_de_Temperatura.o
  .debug_line    0x00000000       0x4c ./lpc_yogurera_lib/Sensor_de_Temperatura.o
- .debug_str     0x00000000     0x25b1 ./lpc_yogurera_lib/Sensor_de_Temperatura.o
+ .debug_str     0x00000000     0x25c0 ./lpc_yogurera_lib/Sensor_de_Temperatura.o
  .comment       0x00000000       0x80 ./lpc_yogurera_lib/Sensor_de_Temperatura.o
  .ARM.attributes
                 0x00000000       0x33 ./lpc_yogurera_lib/Sensor_de_Temperatura.o
@@ -1166,7 +1166,7 @@ END GROUP
                 0x20084000                __top_RamAHB32 = 0x20084000
                 0x20084000                __top_RAM2 = 0x20084000
 
-.text           0x00000000     0x1124
+.text           0x00000000     0x1130
  FILL mask 0xff
                 0x00000000                __vectors_start__ = ABSOLUTE (.)
  *(.isr_vector)
@@ -1175,10 +1175,10 @@ END GROUP
                 0x000000cc                . = ALIGN (0x4)
                 0x000000cc                __section_table_start = .
                 0x000000cc                __data_section_table = .
-                0x000000cc        0x4 LONG 0x1124 LOADADDR (.data)
+                0x000000cc        0x4 LONG 0x1130 LOADADDR (.data)
                 0x000000d0        0x4 LONG 0x10000000 ADDR (.data)
                 0x000000d4        0x4 LONG 0x4 SIZEOF (.data)
-                0x000000d8        0x4 LONG 0x1124 LOADADDR (.data_RAM2)
+                0x000000d8        0x4 LONG 0x1130 LOADADDR (.data_RAM2)
                 0x000000dc        0x4 LONG 0x2007c000 ADDR (.data_RAM2)
                 0x000000e0        0x4 LONG 0x0 SIZEOF (.data_RAM2)
                 0x000000e4                __data_section_table_end = .
@@ -1249,228 +1249,228 @@ END GROUP
                 0x00000300                PROVIDE (__CRP_WORD_END__, .)
                 0x00000001                ASSERT (! ((__CRP_WORD_START__ == __CRP_WORD_END__)), Linker CRP Enabled, but no CRP_WORD provided within application)
  *(.text*)
- .text.main     0x00000300       0x38 ./lpc_yogurera_proj/src/Proyecto_Yogurera.o
+ .text.main     0x00000300       0x44 ./lpc_yogurera_proj/src/Proyecto_Yogurera.o
                 0x00000300                main
  .text.SystemInit
-                0x00000338       0x24 ./lpc_yogurera_proj/src/sysinit.o
-                0x00000338                SystemInit
+                0x00000344       0x24 ./lpc_yogurera_proj/src/sysinit.o
+                0x00000344                SystemInit
  .text.Chip_GPIO_SetPinDIROutput
-                0x0000035c       0x38 ./lpc_yogurera_lib/Modulo_de_Relay.o
+                0x00000368       0x38 ./lpc_yogurera_lib/Modulo_de_Relay.o
  .text.Chip_GPIO_SetPinDIRInput
-                0x00000394       0x3a ./lpc_yogurera_lib/Modulo_de_Relay.o
+                0x000003a0       0x3a ./lpc_yogurera_lib/Modulo_de_Relay.o
  .text.Chip_GPIO_SetPinDIR
-                0x000003ce       0x42 ./lpc_yogurera_lib/Modulo_de_Relay.o
+                0x000003da       0x42 ./lpc_yogurera_lib/Modulo_de_Relay.o
  .text.Chip_GPIO_SetDir
-                0x00000410       0x34 ./lpc_yogurera_lib/Modulo_de_Relay.o
+                0x0000041c       0x34 ./lpc_yogurera_lib/Modulo_de_Relay.o
  .text.Chip_GPIO_SetPinOutHigh
-                0x00000444       0x2c ./lpc_yogurera_lib/Modulo_de_Relay.o
+                0x00000450       0x2c ./lpc_yogurera_lib/Modulo_de_Relay.o
  .text.Chip_GPIO_SetPinOutLow
-                0x00000470       0x2c ./lpc_yogurera_lib/Modulo_de_Relay.o
+                0x0000047c       0x2c ./lpc_yogurera_lib/Modulo_de_Relay.o
  .text.initOutput
-                0x0000049c       0x28 ./lpc_yogurera_lib/Modulo_de_Relay.o
-                0x0000049c                initOutput
+                0x000004a8       0x28 ./lpc_yogurera_lib/Modulo_de_Relay.o
+                0x000004a8                initOutput
  .text.initRelays
-                0x000004c4       0x58 ./lpc_yogurera_lib/Modulo_de_Relay.o
-                0x000004c4                initRelays
+                0x000004d0       0x58 ./lpc_yogurera_lib/Modulo_de_Relay.o
+                0x000004d0                initRelays
  .text.Chip_IOCON_Init
-                0x0000051c       0x16 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x00000528       0x16 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Chip_GPIO_Init
-                0x00000532       0x16 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x0000053e       0x16 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Chip_GPIO_SetPinState
-                0x00000548       0x68 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x00000554       0x68 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Chip_GPIO_WritePortBit
-                0x000005b0       0x2c C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x000005bc       0x2c C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Chip_GPIO_SetPinDIROutput
-                0x000005dc       0x38 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x000005e8       0x38 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Chip_GPIO_SetPinDIRInput
-                0x00000614       0x3a C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x00000620       0x3a C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Chip_GPIO_SetPinDIR
-                0x0000064e       0x42 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x0000065a       0x42 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Chip_GPIO_WriteDirBit
-                0x00000690       0x2e C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x0000069c       0x2e C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Chip_UART_ConfigData
-                0x000006be       0x1a C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x000006ca       0x1a C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Board_LED_Init
-                0x000006d8       0x18 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x000006e4       0x18 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
  .text.Board_UART_Init
-                0x000006f0       0x12 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x000006f0                Board_UART_Init
- *fill*         0x00000702        0x2 ff
+                0x000006fc       0x12 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x000006fc                Board_UART_Init
+ *fill*         0x0000070e        0x2 ff
  .text.Board_Debug_Init
-                0x00000704       0x30 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x00000704                Board_Debug_Init
+                0x00000710       0x30 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x00000710                Board_Debug_Init
  .text.Board_LED_Set
-                0x00000734       0x30 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x00000734                Board_LED_Set
+                0x00000740       0x30 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x00000740                Board_LED_Set
  .text.Board_Init
-                0x00000764       0x24 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x00000764                Board_Init
+                0x00000770       0x24 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x00000770                Board_Init
  .text.Chip_SYSCTL_SetFLASHAccess
-                0x00000788       0x30 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+                0x00000794       0x30 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
  .text.Board_SetupMuxing
-                0x000007b8       0x1c C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
-                0x000007b8                Board_SetupMuxing
+                0x000007c4       0x1c C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+                0x000007c4                Board_SetupMuxing
  .text.Board_SetupClocking
-                0x000007d4       0x12 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
-                0x000007d4                Board_SetupClocking
+                0x000007e0       0x12 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+                0x000007e0                Board_SetupClocking
  .text.Board_SystemInit
-                0x000007e6       0x10 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
-                0x000007e6                Board_SystemInit
- *fill*         0x000007f6        0x2 ff
+                0x000007f2       0x10 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+                0x000007f2                Board_SystemInit
+ *fill*         0x00000802        0x2 ff
  .text.SystemCoreClockUpdate
-                0x000007f8       0x18 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
-                0x000007f8                SystemCoreClockUpdate
+                0x00000804       0x18 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+                0x00000804                SystemCoreClockUpdate
  .text.Chip_Clock_IsMainPLLEnabled
-                0x00000810       0x24 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x0000081c       0x24 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_IsMainPLLConnected
-                0x00000834       0x24 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000840       0x24 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_FeedPLL
-                0x00000858       0x34 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000864       0x34 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetMainPLLSource
-                0x0000088c       0x20 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000898       0x20 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetMainOscRate
-                0x000008ac       0x14 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000008b8       0x14 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetIntOscRate
-                0x000008c0       0x14 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000008cc       0x14 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetRTCOscRate
-                0x000008d4       0x14 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000008e0       0x14 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
  .text.Chip_Clock_GetMainPLLInClockRate
-                0x000008e8        0xe C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- *fill*         0x000008f6        0x2 ff
+                0x000008f4        0xe C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ *fill*         0x00000902        0x2 ff
  .text.Chip_Clock_EnablePLL
-                0x000008f8       0x44 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x000008f8                Chip_Clock_EnablePLL
+                0x00000904       0x44 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000904                Chip_Clock_EnablePLL
  .text.Chip_Clock_DisablePLL
-                0x0000093c       0x48 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x0000093c                Chip_Clock_DisablePLL
+                0x00000948       0x48 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000948                Chip_Clock_DisablePLL
  .text.Chip_Clock_SetupPLL
-                0x00000984       0x5c C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000984                Chip_Clock_SetupPLL
+                0x00000990       0x5c C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000990                Chip_Clock_SetupPLL
  .text.Chip_Clock_EnablePeriphClock
-                0x000009e0       0x34 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x000009e0                Chip_Clock_EnablePeriphClock
+                0x000009ec       0x34 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x000009ec                Chip_Clock_EnablePeriphClock
  .text.Chip_Clock_GetCPUClockSource
-                0x00000a14       0x24 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000a14                Chip_Clock_GetCPUClockSource
+                0x00000a20       0x24 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000a20                Chip_Clock_GetCPUClockSource
  .text.Chip_Clock_SetCPUClockDiv
-                0x00000a38       0x20 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000a38                Chip_Clock_SetCPUClockDiv
+                0x00000a44       0x20 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000a44                Chip_Clock_SetCPUClockDiv
  .text.Chip_Clock_GetCPUClockDiv
-                0x00000a58       0x1c C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000a58                Chip_Clock_GetCPUClockDiv
+                0x00000a64       0x1c C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000a64                Chip_Clock_GetCPUClockDiv
  .text.Chip_Clock_GetPCLKDiv
-                0x00000a74       0x8c C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000a74                Chip_Clock_GetPCLKDiv
+                0x00000a80       0x8c C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000a80                Chip_Clock_GetPCLKDiv
  .text.Chip_Clock_GetSYSCLKRate
-                0x00000b00       0x34 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000b00                Chip_Clock_GetSYSCLKRate
+                0x00000b0c       0x34 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000b0c                Chip_Clock_GetSYSCLKRate
  .text.Chip_Clock_GetMainPLLOutClockRate
-                0x00000b34       0x54 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000b34                Chip_Clock_GetMainPLLOutClockRate
+                0x00000b40       0x54 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000b40                Chip_Clock_GetMainPLLOutClockRate
  .text.Chip_Clock_GetMainClockRate
-                0x00000b88       0x28 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000b88                Chip_Clock_GetMainClockRate
+                0x00000b94       0x28 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000b94                Chip_Clock_GetMainClockRate
  .text.Chip_Clock_GetSystemClockRate
-                0x00000bb0       0x18 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000bb0                Chip_Clock_GetSystemClockRate
+                0x00000bbc       0x18 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000bbc                Chip_Clock_GetSystemClockRate
  .text.Chip_Clock_GetPeripheralClockRate
-                0x00000bc8       0x26 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
-                0x00000bc8                Chip_Clock_GetPeripheralClockRate
+                0x00000bd4       0x26 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+                0x00000bd4                Chip_Clock_GetPeripheralClockRate
  .text.Chip_IOCON_PinMuxSet
-                0x00000bee       0x36 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
-                0x00000bee                Chip_IOCON_PinMuxSet
+                0x00000bfa       0x36 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                0x00000bfa                Chip_IOCON_PinMuxSet
  .text.Chip_IOCON_PinMux
-                0x00000c24       0x92 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
-                0x00000c24                Chip_IOCON_PinMux
+                0x00000c30       0x92 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                0x00000c30                Chip_IOCON_PinMux
  .text.Chip_IOCON_SetPinMuxing
-                0x00000cb6       0x62 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
-                0x00000cb6                Chip_IOCON_SetPinMuxing
+                0x00000cc2       0x62 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+                0x00000cc2                Chip_IOCON_SetPinMuxing
  .text.Chip_Clock_IsMainPLLEnabled
-                0x00000d18       0x24 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000d24       0x24 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_IsMainPLLLocked
-                0x00000d3c       0x24 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000d48       0x24 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_IsMainPLLConnected
-                0x00000d60       0x24 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000d6c       0x24 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_EnableCrystal
-                0x00000d84       0x20 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000d90       0x20 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_IsCrystalEnabled
-                0x00000da4       0x24 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000db0       0x24 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_Clock_SetMainPLLSource
-                0x00000dc8       0x20 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000dd4       0x20 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .text.Chip_SetupXtalClocking
-                0x00000de8       0x90 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
-                0x00000de8                Chip_SetupXtalClocking
+                0x00000df4       0x90 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+                0x00000df4                Chip_SetupXtalClocking
  .text.Chip_UART_SetupFIFOS
-                0x00000e78       0x1a C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x00000e84       0x1a C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
  .text.Chip_UART_ConfigData
-                0x00000e92       0x1a C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x00000e9e       0x1a C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
  .text.Chip_UART_EnableDivisorAccess
-                0x00000eac       0x1e C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x00000eb8       0x1e C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
  .text.Chip_UART_DisableDivisorAccess
-                0x00000eca       0x1e C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x00000ed6       0x1e C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
  .text.Chip_UART_SetDivisorLatches
-                0x00000ee8       0x26 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
- *fill*         0x00000f0e        0x2 ff
+                0x00000ef4       0x26 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+ *fill*         0x00000f1a        0x2 ff
  .text.Chip_UART_GetClockIndex
-                0x00000f10       0x50 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x00000f1c       0x50 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
  .text.Chip_UART_GetClkIndex
-                0x00000f60       0x50 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x00000f6c       0x50 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
  .text.Chip_UART_Init
-                0x00000fb0       0x78 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
-                0x00000fb0                Chip_UART_Init
+                0x00000fbc       0x78 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x00000fbc                Chip_UART_Init
  .text.Chip_UART_TXEnable
-                0x00001028       0x18 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
-                0x00001028                Chip_UART_TXEnable
+                0x00001034       0x18 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x00001034                Chip_UART_TXEnable
  .text.Chip_UART_TXDisable
-                0x00001040       0x18 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
-                0x00001040                Chip_UART_TXDisable
+                0x0000104c       0x18 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x0000104c                Chip_UART_TXDisable
  .text.Chip_UART_SetBaud
-                0x00001058       0x62 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
-                0x00001058                Chip_UART_SetBaud
+                0x00001064       0x62 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+                0x00001064                Chip_UART_SetBaud
  .text.__weak_main
-                0x000010ba        0x4 c:/nxp/mcuxpressoide_10.1.1_606/ide/tools/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libcr_c.a(__weak__main.o)
-                0x000010ba                __weak_main
-                0x000010ba                __main
+                0x000010c6        0x4 c:/nxp/mcuxpressoide_10.1.1_606/ide/tools/bin/../lib/gcc/arm-none-eabi/6.3.1/../../../../arm-none-eabi/lib/thumb/v7-m\libcr_c.a(__weak__main.o)
+                0x000010c6                __weak_main
+                0x000010c6                __main
  *(.rodata .rodata.* .constdata .constdata.*)
- *fill*         0x000010be        0x2 ff
+ *fill*         0x000010ca        0x2 ff
  .rodata.OscRateIn
-                0x000010c0        0x4 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x000010c0                OscRateIn
+                0x000010cc        0x4 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x000010cc                OscRateIn
  .rodata.RTCOscRateIn
-                0x000010c4        0x4 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
-                0x000010c4                RTCOscRateIn
+                0x000010d0        0x4 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+                0x000010d0                RTCOscRateIn
  .rodata.pinmuxing
-                0x000010c8       0x5c C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
-                0x00001124                . = ALIGN (0x4)
+                0x000010d4       0x5c C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+                0x00001130                . = ALIGN (0x4)
 
-.glue_7         0x00001124        0x0
- .glue_7        0x00001124        0x0 linker stubs
+.glue_7         0x00001130        0x0
+ .glue_7        0x00001130        0x0 linker stubs
 
-.glue_7t        0x00001124        0x0
- .glue_7t       0x00001124        0x0 linker stubs
+.glue_7t        0x00001130        0x0
+ .glue_7t       0x00001130        0x0 linker stubs
 
-.vfp11_veneer   0x00001124        0x0
- .vfp11_veneer  0x00001124        0x0 linker stubs
+.vfp11_veneer   0x00001130        0x0
+ .vfp11_veneer  0x00001130        0x0 linker stubs
 
-.v4_bx          0x00001124        0x0
- .v4_bx         0x00001124        0x0 linker stubs
+.v4_bx          0x00001130        0x0
+ .v4_bx         0x00001130        0x0 linker stubs
 
-.iplt           0x00001124        0x0
- .iplt          0x00001124        0x0 ./lpc_yogurera_proj/src/Proyecto_Yogurera.o
+.iplt           0x00001130        0x0
+ .iplt          0x00001130        0x0 ./lpc_yogurera_proj/src/Proyecto_Yogurera.o
 
-.rel.dyn        0x00001124        0x0
- .rel.iplt      0x00001124        0x0 ./lpc_yogurera_proj/src/Proyecto_Yogurera.o
+.rel.dyn        0x00001130        0x0
+ .rel.iplt      0x00001130        0x0 ./lpc_yogurera_proj/src/Proyecto_Yogurera.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x00001124                __exidx_start = .
+                0x00001130                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x00001124                __exidx_end = .
-                0x00001124                _etext = .
+                0x00001130                __exidx_end = .
+                0x00001130                _etext = .
 
-.data_RAM2      0x2007c000        0x0 load address 0x00001124
+.data_RAM2      0x2007c000        0x0 load address 0x00001130
  FILL mask 0xff
                 [!provide]                PROVIDE (__start_data_RAM2, .)
  *(.ramfunc.$RAM2)
@@ -1486,7 +1486,7 @@ END GROUP
                 0x10000000                . = ALIGN (0x4)
                 0x10000000                _end_uninit_RESERVED = .
 
-.data           0x10000000        0x4 load address 0x00001124
+.data           0x10000000        0x4 load address 0x00001130
  FILL mask 0xff
                 0x10000000                _data = .
  *(vtable)
@@ -1499,7 +1499,7 @@ END GROUP
  *fill*         0x10000001        0x3 ff
                 0x10000004                _edata = .
 
-.igot.plt       0x10000004        0x0 load address 0x00001128
+.igot.plt       0x10000004        0x0 load address 0x00001134
  .igot.plt      0x10000004        0x0 ./lpc_yogurera_proj/src/Proyecto_Yogurera.o
 
 .bss_RAM2       0x2007c000        0x0
@@ -1534,8 +1534,8 @@ END GROUP
                 0x10008000                PROVIDE (_vStackTop, DEFINED (__user_stack_top)?__user_stack_top:(__top_RamLoc32 - 0x0))
                 0xefff74de                PROVIDE (__valid_user_code_checksum, (0x0 - ((((((_vStackTop + (ResetISR + 0x1)) + (NMI_Handler + 0x1)) + (HardFault_Handler + 0x1)) + (DEFINED (MemManage_Handler)?MemManage_Handler:0x0 + 0x1)) + (DEFINED (BusFault_Handler)?BusFault_Handler:0x0 + 0x1)) + (DEFINED (UsageFault_Handler)?UsageFault_Handler:0x0 + 0x1))))
                 0x00000000                _image_start = LOADADDR (.text)
-                0x00001128                _image_end = (LOADADDR (.data) + SIZEOF (.data))
-                0x00001128                _image_size = (_image_end - _image_start)
+                0x00001134                _image_end = (LOADADDR (.data) + SIZEOF (.data))
+                0x00001134                _image_size = (_image_end - _image_start)
 OUTPUT(Proyecto_Yogurera.axf elf32-littlearm)
 
 .debug_info     0x00000000     0x500b
@@ -1662,44 +1662,44 @@ OUTPUT(Proyecto_Yogurera.axf elf32-littlearm)
  .debug_macro   0x000052ce      0x1cd C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
  .debug_macro   0x0000549b      0x1cd C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
 
-.debug_line     0x00000000     0x398e
- .debug_line    0x00000000      0x54e ./lpc_yogurera_proj/src/Proyecto_Yogurera.o
- .debug_line    0x0000054e       0xe5 ./lpc_yogurera_proj/src/cr_startup_lpc175x_6x.o
- .debug_line    0x00000633       0x87 ./lpc_yogurera_proj/src/crp.o
- .debug_line    0x000006ba      0x4a9 ./lpc_yogurera_proj/src/sysinit.o
- .debug_line    0x00000b63      0x549 ./lpc_yogurera_lib/Modulo_de_Relay.o
- .debug_line    0x000010ac      0x852 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
- .debug_line    0x000018fe      0x4d7 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
- .debug_line    0x00001dd5      0x457 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
- .debug_line    0x0000222c      0x6d3 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
- .debug_line    0x000028ff      0x443 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
- .debug_line    0x00002d42      0x4cd C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
- .debug_line    0x0000320f      0x77f C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+.debug_line     0x00000000     0x3990
+ .debug_line    0x00000000      0x550 ./lpc_yogurera_proj/src/Proyecto_Yogurera.o
+ .debug_line    0x00000550       0xe5 ./lpc_yogurera_proj/src/cr_startup_lpc175x_6x.o
+ .debug_line    0x00000635       0x87 ./lpc_yogurera_proj/src/crp.o
+ .debug_line    0x000006bc      0x4a9 ./lpc_yogurera_proj/src/sysinit.o
+ .debug_line    0x00000b65      0x549 ./lpc_yogurera_lib/Modulo_de_Relay.o
+ .debug_line    0x000010ae      0x852 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+ .debug_line    0x00001900      0x4d7 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_line    0x00001dd7      0x457 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_line    0x0000222e      0x6d3 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_line    0x00002901      0x443 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_line    0x00002d44      0x4cd C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_line    0x00003211      0x77f C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
 
-.debug_str      0x00000000    0x13260
- .debug_str     0x00000000    0x10ed5 ./lpc_yogurera_proj/src/Proyecto_Yogurera.o
-                              0x10fb3 (size before relaxing)
- .debug_str     0x00010ed5      0x1e8 ./lpc_yogurera_proj/src/cr_startup_lpc175x_6x.o
-                               0x2789 (size before relaxing)
- .debug_str     0x000110bd       0xfb ./lpc_yogurera_proj/src/crp.o
-                               0x268d (size before relaxing)
- .debug_str     0x000111b8       0x2d ./lpc_yogurera_proj/src/sysinit.o
-                              0x10b6b (size before relaxing)
- .debug_str     0x000111e5      0x2ae ./lpc_yogurera_lib/Modulo_de_Relay.o
-                              0x10deb (size before relaxing)
- .debug_str     0x00011493      0xd86 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
+.debug_str      0x00000000    0x1326f
+ .debug_str     0x00000000    0x10ee4 ./lpc_yogurera_proj/src/Proyecto_Yogurera.o
+                              0x10fc2 (size before relaxing)
+ .debug_str     0x00010ee4      0x1e8 ./lpc_yogurera_proj/src/cr_startup_lpc175x_6x.o
+                               0x2798 (size before relaxing)
+ .debug_str     0x000110cc       0xfb ./lpc_yogurera_proj/src/crp.o
+                               0x269c (size before relaxing)
+ .debug_str     0x000111c7       0x2d ./lpc_yogurera_proj/src/sysinit.o
+                              0x10b7a (size before relaxing)
+ .debug_str     0x000111f4      0x2ae ./lpc_yogurera_lib/Modulo_de_Relay.o
+                              0x10dfa (size before relaxing)
+ .debug_str     0x000114a2      0xd86 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board.o)
                               0x11a19 (size before relaxing)
- .debug_str     0x00012219      0x22d C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
+ .debug_str     0x00012228      0x22d C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_board_nxp_lpcxpresso_1769\Debug\liblpc_board_nxp_lpcxpresso_1769.a(board_sysinit.o)
                               0x10f53 (size before relaxing)
- .debug_str     0x00012446       0xc6 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
+ .debug_str     0x00012455       0xc6 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(chip_17xx_40xx.o)
                               0x10ba3 (size before relaxing)
- .debug_str     0x0001250c      0x857 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
+ .debug_str     0x0001251b      0x857 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(clock_17xx_40xx.o)
                               0x11221 (size before relaxing)
- .debug_str     0x00012d63       0x79 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
+ .debug_str     0x00012d72       0x79 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(iocon_17xx_40xx.o)
                               0x1069e (size before relaxing)
- .debug_str     0x00012ddc       0xc4 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
+ .debug_str     0x00012deb       0xc4 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(sysinit_17xx_40xx.o)
                               0x10886 (size before relaxing)
- .debug_str     0x00012ea0      0x3c0 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
+ .debug_str     0x00012eaf      0x3c0 C:\Users\matia\Documents\MCUXpressoIDE_10.1.1_606\workspace\lpc_chip_175x_6x\Debug\liblpc_chip_175x_6x.a(uart_17xx_40xx.o)
                               0x110f6 (size before relaxing)
 
 .comment        0x00000000       0x7f
